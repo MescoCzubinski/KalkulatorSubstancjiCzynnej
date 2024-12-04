@@ -42,6 +42,7 @@ let elementDoseContentsUnit = document.querySelector("#dose-contents-unit");
 let elementIngredientContentsPolish = document.querySelector("#ingredient-contents-polish");
 let elementIngredientContentsPolishUnit = document.querySelector("#ingredient-contents-polish-unit");
 let elementResult = document.querySelector("#result");
+let elementReset = document.querySelector("#reset");
 
 document.addEventListener("input", function () {
   let result = 0;
@@ -65,4 +66,14 @@ document.addEventListener("input", function () {
 
   result = Math.round(result * 1000) / 1000;
   if (result !== Infinity && result !== 0 && !isNaN(result)) elementResult.innerHTML = result + " " + elementDoseContentsUnit.value;
+});
+
+elementReset.addEventListener("click", function () {
+  let elements = [elementIngredientContentsOther, elementIngredientContentsOtherUnit, elementDoseContents, elementDoseContentsUnit, elementIngredientContentsPolish, elementIngredientContentsPolishUnit, elementResult];
+
+  for (element of elements) {
+    element.value = "";
+    element.classList.remove("visited");
+  }
+  elementResult.innerHTML = "";
 });
