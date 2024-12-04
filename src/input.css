@@ -9,12 +9,12 @@ input[type="text"] {
   @apply w-64 rounded-r-lg rounded-3xl mr-2 pl-2;
 }
 select {
-  @apply w-28 rounded-l-lg rounded-3xl cursor-pointer;
+  @apply w-28 rounded-l-lg rounded-3xl cursor-pointer bg-transparent;
 }
 
 .input:hover {
   @apply border-top-agrar-green bg-top-agrar-green/10 shadow-xl shadow-gray-300 text-top-agrar-green;
 }
 .visited {
-  @apply border-black text-black;
+  @apply border-black text-black bg-white;
 }

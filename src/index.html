@@ -13,14 +13,14 @@
       <div class="flex justify-center">
         <div class="max-w-96 mt-10 bg-white border-2 border-gray-200 rounded-2xl p-4 shadow-gray-400 shadow-md">
           <header>
-            <div class="flex mb-4 justify-between align-middle items-center">
-              <div class="text-3xl flex flex-wrap justify-center text-center font-bold">Kalkulator substancji czynnej</div>
-              <input type="button" id="reset" value="Resetuj" class="input rounded-2xl text-gray-400 text-sm cursor-pointer"/>
+            <div class="flex mb-8 justify-between align-middle items-center">
+              <div class="text-2xl flex flex-wrap justify-center text-center font-bold">Kalkulator substancji czynnej</div>
+              <input type="button" id="reset" value="Resetuj" class="h-12 border-2 border-gray-400 rounded-3xl text-gray-400 text-xl cursor-pointer pl-1 pr-1 hover:border-top-agrar-green hover:bg-top-agrar-green/10 hover:shadow-xl hover:shadow-gray-300 hover:text-top-agrar-green"/>
             </div>              
           </header>
           <article>
-            <div class="flex text-xl font-medium justify-center mb-2">Środek z innych zaleceń</div>
-            <div class="flex mb-2">
+            <div class="flex text-xl font-medium justify-center mb-4">Środek z innych zaleceń</div>
+            <div class="flex mb-4">
               <input type="text" inputmode="numeric" pattern="[0-9]*" class="input" id="ingredient-contents-other" placeholder="zawartość s.cz."/>
               <select class="input" id="ingredient-contents-other-unit">
                 <option selected hidden></option>
@@ -29,7 +29,7 @@
                 <option value="%">%</option>
               </select>
             </div>
-            <div class="flex mb-4">
+            <div class="flex mb-8">
               <input type="text" inputmode="numeric" pattern="[0-9]*" class="input" id="dose-contents" placeholder="dawka ś.o.r."/>
               <select class="input" id="dose-contents-unit">
                 <option selected hidden></option>
@@ -40,18 +40,18 @@
               </select>
           </article>
           <article>
-            <div class="flex text-xl font-medium justify-center mb-2">Środek z polskich zaleceń</div>
-            <div class="flex mb-2">
+            <div class="flex text-xl font-medium justify-center mb-4">Środek z polskich zaleceń</div>
+            <div class="flex mb-4">
               <input type="text" inputmode="numeric" pattern="[0-9]*" class="input" id="ingredient-contents-polish" placeholder="zawartość s.cz."/>
-              <select class="input mb-4" id="ingredient-contents-polish-unit">
+              <select class="input mb-8" id="ingredient-contents-polish-unit">
                 <option selected hidden></option>
                 <option value="g/l">g/l</option>
                 <option value="g/kg">g/kg</option>
                 <option value="%">%</option>
               </select>
             </div>
-            <div class="pl-4 pr-4 h-16">
-              <div class="flex justify-center text-xl font-medium mb-2">Wyliczona dawka środka:</div>
+            <div class="pl-4 pr-4 h-20">
+              <div class="flex justify-center text-xl font-medium mb-4">Wyliczona dawka środka:</div>
               <div id="result" class="text-center text-xl"></div>
             </div>
           </article>
