@@ -46,19 +46,17 @@ let elementReset = document.querySelector("#reset");
 
 document.addEventListener("input", function () {
   let result = 0;
-
   let otherIngredients = textToNumber(elementIngredientContentsOther.value);
   elementIngredientContentsOther.value = otherIngredients;
-
   let doseContents = textToNumber(elementDoseContents.value);
   elementDoseContents.value = doseContents;
-
   let polishIngredients = textToNumber(elementIngredientContentsPolish.value);
   elementIngredientContentsPolish.value = polishIngredients;
 
   result = calculation(otherIngredients, doseContents, polishIngredients);
   if (elementIngredientContentsPolishUnit.value === "%") {
     result /= 10;
+    // if(elementIngredientContentsPolish.value)
   }
   if (elementIngredientContentsOtherUnit.value === "%") {
     result *= 10;
