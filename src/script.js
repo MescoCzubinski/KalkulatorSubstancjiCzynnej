@@ -32,6 +32,9 @@ function oneDot(variable) {
 function isPercent(variable) {
   return variable > 100 ? "" : variable;
 }
+function isUnit(variable) {
+  return variable > 1000 ? "" : variable;
+}
 function calculation(a, b, c) {
   console.log(a);
   console.log(b);
@@ -58,9 +61,13 @@ document.addEventListener("input", function () {
 
   if (elementIngredientContentsOtherUnit.value === "%") {
     elementIngredientContentsOther.value = isPercent(otherIngredients);
+  } else {
+    elementIngredientContentsOther.value = isUnit(otherIngredients);
   }
   if (elementIngredientContentsPolishUnit.value === "%") {
     elementIngredientContentsPolish.value = isPercent(polishIngredients);
+  } else {
+    elementIngredientContentsPolish.value = isUnit(polishIngredients);
   }
 
   result = calculation(otherIngredients, doseContents, polishIngredients);
