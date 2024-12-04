@@ -15,13 +15,13 @@
           <header>
             <div class="flex mb-4">
               <div class="text-3xl flex flex-wrap justify-center text-center font-bold">Kalkulator substancji czynnej</div>
-              <input type="button" id="reset" value="reset" class="text-md input rounded-2xl" />
+              <input type="button" id="reset" value="Resetuj" class="text-md input rounded-2xl"/>
             </div>              
           </header>
           <article>
             <div class="flex text-xl font-medium justify-center mb-2">Środek z innych zaleceń</div>
             <div class="flex mb-2">
-              <input type="text" class="input" id="ingredient-contents-other"/>
+              <input type="text" class="input" id="ingredient-contents-other" placeholder="zawartość s. cz."/>
               <select class="input" id="ingredient-contents-other-unit">
                 <option selected hidden></option>
                 <option value="g/l">g/l</option>
@@ -30,7 +30,7 @@
               </select>
             </div>
             <div class="flex mb-4">
-              <input type="text" class="input" id="dose-contents"/>
+              <input type="text" class="input" id="dose-contents" placeholder="dawka ś.o.r."/>
               <select class="input" id="dose-contents-unit">
                 <option selected hidden></option>
                 <option value="l/ha">l/ha</option>
@@ -42,7 +42,7 @@
           <article>
             <div class="flex text-xl font-medium justify-center mb-2">Środek z polskich zaleceń</div>
             <div class="flex mb-2">
-              <input type="text" class="input" id="ingredient-contents-polish"/>
+              <input type="text" class="input" id="ingredient-contents-polish" placeholder="zawartość s. cz."/>
               <select class="input" id="ingredient-contents-polish-unit">
                 <option selected hidden></option>
                 <option value="g/l">g/l</option>
