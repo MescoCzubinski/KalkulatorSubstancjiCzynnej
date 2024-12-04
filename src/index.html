@@ -11,7 +11,7 @@
   <body class="w-full h-full bg-top-agrar-green/20 font-sans: "Poppins">
     <main>
       <div class="flex justify-center">
-        <div class="w-96 mt-10 bg-white border-2 border-gray-200 rounded-2xl p-4 shadow-gray-400 shadow-md">
+        <div class="max-w-96 mt-10 bg-white border-2 border-gray-200 rounded-2xl p-4 shadow-gray-400 shadow-md">
           <header>
             <div class="flex mb-4">
               <div class="text-3xl flex flex-wrap justify-center text-center font-bold">Kalkulator substancji czynnej</div>
@@ -21,8 +21,8 @@
           <article>
             <div class="flex text-xl font-medium justify-center mb-2">Środek z innych zaleceń</div>
             <div class="flex mb-2">
-              <input type="text" class="input" />
-              <select class="input">
+              <input type="text" class="input" id="ingredient-contents-other"/>
+              <select class="input" id="ingredient-contents-other-unit">
                 <option selected hidden></option>
                 <option value="g/l">g/l</option>
                 <option value="g/kg">g/kg</option>
@@ -30,8 +30,8 @@
               </select>
             </div>
             <div class="flex mb-4">
-              <input type="text" class="input" />
-              <select class="input">
+              <input type="text" class="input" id="dose-contents"/>
+              <select class="input" id="dose-contents-unit">
                 <option selected hidden></option>
                 <option value="l/ha">l/ha</option>
                 <option value="kg/ha">kg/ha</option>
@@ -42,15 +42,18 @@
           <article>
             <div class="flex text-xl font-medium justify-center mb-2">Środek z polskich zaleceń</div>
             <div class="flex mb-2">
-              <input type="text" class="input" />
-              <select class="input">
+              <input type="text" class="input" id="ingredient-contents-polish"/>
+              <select class="input" id="ingredient-contents-polish-unit">
                 <option selected hidden></option>
                 <option value="g/l">g/l</option>
                 <option value="g/kg">g/kg</option>
                 <option value="%">%</option>
               </select>
             </div>
-            <div class="flex justify-center text-2xl">280 kg</div>
+            <div class="flex justify-between pl-4 pr-4 text-2xl">
+              <div class="">Dawka środka:</div>
+              <div id="result"></div>
+            </div>
           </article>
         </div>
       </div>
