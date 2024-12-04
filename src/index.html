@@ -21,7 +21,7 @@
           <article>
             <div class="flex text-xl font-medium justify-center mb-2">Środek z innych zaleceń</div>
             <div class="flex mb-2">
-              <input type="text" class="input" id="ingredient-contents-other" placeholder="zawartość s. cz."/>
+              <input type="text" class="input" id="ingredient-contents-other" placeholder="zawartość s.cz."/>
               <select class="input" id="ingredient-contents-other-unit">
                 <option selected hidden></option>
                 <option value="g/l">g/l</option>
@@ -42,17 +42,17 @@
           <article>
             <div class="flex text-xl font-medium justify-center mb-2">Środek z polskich zaleceń</div>
             <div class="flex mb-2">
-              <input type="text" class="input" id="ingredient-contents-polish" placeholder="zawartość s. cz."/>
-              <select class="input" id="ingredient-contents-polish-unit">
+              <input type="text" class="input" id="ingredient-contents-polish" placeholder="zawartość s.cz."/>
+              <select class="input mb-4" id="ingredient-contents-polish-unit">
                 <option selected hidden></option>
                 <option value="g/l">g/l</option>
                 <option value="g/kg">g/kg</option>
                 <option value="%">%</option>
               </select>
             </div>
-            <div class="flex justify-between pl-4 pr-4 text-2xl">
-              <div class="">Dawka środka:</div>
-              <div id="result"></div>
+            <div class="pl-4 pr-4 h-24">
+              <div class="flex justify-center text-xl font-medium mb-2">Wyliczona dawka środka:</div>
+              <div id="result" class=""></div>
             </div>
           </article>
         </div>
