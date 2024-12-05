@@ -36,9 +36,6 @@ function isUnit(variable) {
   return variable > 1000 ? "" : variable;
 }
 function calculation(a, b, c) {
-  console.log(a);
-  console.log(b);
-  console.log(c);
   return (a * b) / c;
 }
 let elementIngredientContentsOther = document.querySelector("#ingredient-contents-other");
