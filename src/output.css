@@ -566,6 +566,18 @@ video {
   margin-top: 2.5rem;
 }
 
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
+.ml-1\.5 {
+  margin-left: 0.375rem;
+}
+
 .flex {
   display: flex;
 }
@@ -590,8 +602,8 @@ video {
   width: 100%;
 }
 
-.max-w-96 {
-  max-width: 24rem;
+.max-w-80 {
+  max-width: 20rem;
 }
 
 .cursor-pointer {
@@ -727,7 +739,7 @@ video {
 
 input[type="text"] {
   margin-right: 0.5rem;
-  width: 16rem;
+  width: 66.666667%;
   border-radius: 1.5rem;
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
@@ -735,7 +747,7 @@ input[type="text"] {
 }
 
 select {
-  width: 7rem;
+  width: 33.333333%;
   cursor: pointer;
   border-radius: 1.5rem;
   border-top-left-radius: 0.5rem;

@@ -6,10 +6,10 @@
   @apply h-12 text-2xl border-2 border-gray-400;
 }
 input[type="text"] {
-  @apply w-64 rounded-r-lg rounded-3xl mr-2 pl-2;
+  @apply w-8/12 rounded-r-lg rounded-3xl mr-2 pl-2;
 }
 select {
-  @apply w-28 rounded-l-lg rounded-3xl cursor-pointer bg-transparent;
+  @apply w-4/12 rounded-l-lg rounded-3xl cursor-pointer bg-transparent;
 }
 
 .input:hover {
